@@ -1,0 +1,5 @@
+print("*** You've got 3 sec to stop timer 0***")
+tmr.alarm(0, 3000, 0, function()
+  dofile("mqttc_httpd.lua")
+  print("start...")
+end)
